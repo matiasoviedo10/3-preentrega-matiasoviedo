@@ -1,364 +1,313 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-
-.logo img {
-    max-height: 56px;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+/* HEADER */
+.img {
+  max-height: 56px;
 }
 
 .navbar-nav {
-    text-align: end;
+  text-align: end;
+}
+.navbar-nav .botonemergencias {
+  text-align: end;
+}
+.navbar-nav .botonemergencias button {
+  background-color: red;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 100px;
+  font-weight: bold;
+  font-family: "Monserrat";
+  font-size: 75%;
 }
 
-.botonemergencias {
-    text-align: end;
+.enlace-botonemergencias {
+  text-decoration: none;
 }
-.botonemergencias button {
+.enlace-botonemergencias button {
+  display: none;
+}
+
+/* VISTA DESKTOP */
+@media (min-width: 992px) {
+  .encabezado {
+    align-items: center;
+  }
+  .encabezado .logo img {
+    max-height: 72px;
+  }
+  .encabezado .collapse {
+    justify-content: end;
+    text-transform: uppercase;
+  }
+  .encabezado .collapse .nav-link {
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+    font-family: "Monserrat";
+    cursor: pointer;
+  }
+  .encabezado .collapse .nav-link:hover {
+    background-color: #1A8389;
+    color: white;
+  }
+  .encabezado .collapse .botonemergencias {
+    display: none;
+  }
+  .encabezado .botonemergencias1 {
+    text-align: end;
+  }
+  .encabezado .botonemergencias1 button {
+    display: initial;
     background-color: red;
     color: white;
     padding: 12px 16px;
     border: none;
     border-radius: 100px;
     font-weight: bold;
-    font-family: "Monserrat"; 
-    font-size: 75%;
+    font-family: "Monserrat";
+    cursor: pointer;
+  }
+  .encabezado .botonemergencias1 button:hover {
+    background-color: yellow;
+    color: black;
+  }
 }
-
-.enlace-botonemergencias {
-    text-decoration: none;
-}
-
-.botonemergencias1 button {
-    display: none;
-}
-
-@media (min-width: 992px) {
-    .encabezado {
-        align-items: center;
-    }
-    .logo img {
-        max-height: 72px;
-    }
-    .collapse {
-        justify-content: end;
-        text-transform: uppercase;
-    }
-    .nav-link {
-        border: none;
-        border-radius: 100px;
-        font-weight: bold;
-        font-family: "Monserrat"; 
-        cursor: pointer;
-    }
-    .nav-link:hover {
-        background-color: #1A8389;
-        color: white;
-    }
-    .botonemergencias {
-        display: none;
-    }
-    .botonemergencias1 {
-        text-align: end;
-    }
-    .botonemergencias1 button {
-        display: initial;
-        background-color: red;
-        color: white;
-        padding: 12px 16px;
-        border: none;
-        border-radius: 100px;
-        font-weight: bold;
-        font-family: "Monserrat"; 
-        cursor: pointer;
-    }
-    .botonemergencias1 button:hover {
-        background-color: yellow;
-        color: black;
-    }
-}
-
-/* MAIN */  
-
+/* MAIN */
 .container {
-    position: relative;
+  position: relative;
+}
+.container .texto {
+  position: absolute;
+  text-align: center;
+  font-family: "Monserrat";
+  z-index: 1;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .texto .titulo {
+  font-size: 36px;
+  color: #1A8389;
+  font-weight: 700;
+}
+.container .texto .titulo .subrayado {
+  text-decoration: underline;
+}
+.container .texto .eslogan {
+  font-size: 16px;
+  color: #1A8389;
+}
+.container .imagenprincipal {
+  width: 100%;
+  z-index: 2;
+  border-radius: 20px;
 }
 
-.imagenprincipal {
-    width: 100%;
-    z-index: 2;
-    border-radius: 20px;
-}
-
-.texto {
-    position: absolute;
-    text-align: center;
-    font-family: "Monserrat";
-    z-index: 1;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.titulo {
-    font-size: 36px;
-    color: #1A8389;
-    font-weight: 700;
-}
-
-.subrayado {
-    text-decoration: underline;
-}
-
-.eslogan {
-    font-size:16px;
-    color: #1A8389;
-}
-
-.servicios-desktop {
-    display: none;
-}
-
+/* VISTA DESKTOP */
 @media (min-width: 992px) {
-    .imagenprincipal {
-        border-radius: 20px;
-    }
-    .texto {
-        top: 25%;
-    }
-    .titulo {
-        font-size: 72px;
-    }
-    .eslogan {
-        font-size: 28px;
-        text-align: end;
-    }
-
-    .contenedor-carousel {
-        width: 60%;
-    }
+  .texto {
+    top: 25%;
+  }
+  .texto .titulo {
+    font-size: 72px;
+  }
+  .texto .eslogan {
+    font-size: 28px;
+    text-align: end;
+  }
+  .imagenprincipal {
+    border-radius: 20px;
+  }
+  .contenedor-carousel {
+    width: 60%;
+  }
+}
+/* ASIDE */
+.div-turnero {
+  background-color: #1A8389;
+  padding: 24px;
+  display: block;
+  border-radius: 20px;
+}
+.div-turnero .turnero {
+  background-color: white;
+  padding: 16px;
+  border-radius: 15px;
+  box-shadow: 0 2px 4px #022a2c;
+  display: flex;
+  flex-direction: column;
+}
+.div-turnero .turnero .tituloturnero {
+  text-align: center;
+  margin: 16px 16px 32px;
+  font-weight: 700;
+  font-family: "Monserrat";
+  color: #1A8389;
+}
+.div-turnero .turnero form {
+  display: flex;
+  flex-direction: column;
+}
+.div-turnero .turnero form .label-turnero {
+  text-align: center;
+  font-weight: 700;
+  font-family: "Monserrat";
+  color: #1A8389;
+}
+.div-turnero .turnero form .input-turnero {
+  text-align: center;
+  padding: 2% 20%;
+  border-radius: 20px;
+  margin: 10px 0px;
+  color: #1A8389;
+  font-weight: 700;
+}
+.div-turnero .turnero form .contenedor-botonturnero {
+  text-align: center;
+  margin: 16px;
+}
+.div-turnero .turnero form .contenedor-botonturnero .botonturnero {
+  background-color: #1A8389;
+  color: white;
+  padding: 12px 12px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-family: "Monserrat";
 }
 
-    /* ASIDE */
-
-    .div-turnero {
-        background-color: #1A8389;
-        padding: 24px;
-        display: block;
-        border-radius: 20px;
-    }
-    .turnero {
-        background-color: white;
-        padding: 16px;
-        border-radius: 15px;
-        box-shadow: 0 2px 4px #022a2c;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .tituloturnero {
-        text-align: center;
-        margin: 16px 16px 32px;
-        font-weight: 700;
-        font-family: "Monserrat";
-        color: #1A8389;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .label-turnero {
-        text-align: center;
-        font-weight: 700;
-        font-family: "Monserrat";
-        color: #1A8389;
-    }
-
-    .input-turnero {
-        text-align: center;
-        padding: 2% 20%;
-        border-radius: 20px;
-        margin: 10px 0px;
-        color: #1A8389;
-        font-weight: 700;
-    }
-
-    .contenedor-botonturnero {
-        text-align: center;
-        margin: 16px;
-    }
-    .botonturnero {
-        background-color: #1A8389;
-        color: white;
-        padding: 12px 12px;
-        border: none;
-        border-radius: 50px;
-        font-weight: bold;
-        font-family: "Monserrat"; 
-    }
-
-    @media (min-width: 992px) {
-        .div-turnero {
-            padding: 46px 165px
-        }
-        .turnero {
-            padding: 16px 56px; 
-        }
-        .tituloturnero {
-            font-size: 48px;
-        }
-        .input-turnero {
-            padding:1% 10%;
-
-        }
-    }
-
-    /* PIE DE PAGINA */
-    .piedepagina {
-        background-color: black;
-        margin-top: 16px;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-    }
-
-    h6 {
-        color: white;
-    }
-
-    .footerubicacion {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        margin: 1px;
-        padding: 16px 1px;
-        text-align: center;
-        height: 100%;
-    }
-
-    .contenedorubicacion { 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-decoration: none;
-    }
-
-.calleubicacion { 
-    font-family: "Monserrat";
-    margin: 5px 5px 2.5px;
-    padding: 5px 5px 2.5px;
+/* VISTA DESKTOP */
+@media (min-width: 992px) {
+  .div-turnero {
+    padding: 46px 165px;
+  }
+  .div-turnero .tituloturnero {
+    font-size: 48px;
+  }
+  .div-turnero .input-turnero {
+    padding: 1% 10%;
+  }
 }
-
-.barrioubicacion {
-    font-family: "Monserrat";
-    margin: 2.5px 5px 5px;
-    padding: 2.5px 5px 5px;
+/* PIE DE PAGINA */
+.piedepagina {
+  background-color: black;
+  margin-top: 16px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
-
-.footerhorarios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1px;
-    padding: 16px 1px;
-    text-align: center;
-    height: 100%;
+.piedepagina h6 {
+  color: white;
 }
-
-.contenedorhorarios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.piedepagina .footerubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1px;
+  padding: 16px 1px;
+  text-align: center;
+  height: 100%;
 }
-
-.diaslaborales {
-    font-family: "Monserrat";
-    margin: 5px 5px 2.5px;
-    padding: 5px 5px 2.5px;
+.piedepagina .footerubicacion .contenedorubicacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
 }
-
-.horarioslaborales {    
-    font-family: "Monserrat";
-    margin: 2.5px 5px 5px;
-    padding: 2.5px 5px 5px;
+.piedepagina .footerubicacion .contenedorubicacion .calleubicacion {
+  font-family: "Monserrat";
+  margin: 5px 5px 2.5px;
+  padding: 5px 5px 2.5px;
 }
-
-.iconofooter {
-    width: 56px;
+.piedepagina .footerubicacion .contenedorubicacion .barrioubicacion {
+  font-family: "Monserrat";
+  margin: 2.5px 5px 5px;
+  padding: 2.5px 5px 5px;
+}
+.piedepagina .footerhorarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1px;
+  padding: 16px 1px;
+  text-align: center;
+  height: 100%;
+}
+.piedepagina .footerhorarios .diaslaborales {
+  font-family: "Monserrat";
+  margin: 5px 5px 2.5px;
+  padding: 5px 5px 2.5px;
+}
+.piedepagina .footerhorarios .horarioslaborales {
+  font-family: "Monserrat";
+  margin: 2.5px 5px 5px;
+  padding: 2.5px 5px 5px;
 }
 
 .footerredes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 1px;
-    padding: 16px 1px;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1px;
+  padding: 16px 1px;
+  height: 100%;
 }
-
-.contenedorinstagram {
-    width: 48px;
-    height: 48px;
-    margin: 1px;
-    padding: 1px 1px 6px6;
+.footerredes .contenedorinstagram {
+  width: 48px;
+  height: 48px;
+  margin: 1px;
+  padding: 1px 1px 6px6;
 }
-
-.iconoinstagram { 
-    width: 48px;
-    height: 48px;
+.footerredes .contenedorinstagram .iconoinstagram {
+  width: 48px;
+  height: 48px;
 }
-
-.contenedorwhatsapp {
-    width: 48px;
-    height: 48px;
-    margin: 1px;
-    padding: 6px 1px 1px;
+.footerredes .contenedorwhatsapp {
+  width: 48px;
+  height: 48px;
+  margin: 1px;
+  padding: 6px 1px 1px;
 }
-
-.iconowhatsapp {
-    width: 48px;
-    height: 48px;
+.footerredes .contenedorwhatsapp .iconowhatsapp {
+  width: 48px;
+  height: 48px;
 }
 
 .registro {
-    background-color: white;
-    flex-wrap: nowrap;
-    border-width: 1px;
-    border-style: solid;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 5px 0px;
-
+  background-color: white;
+  flex-wrap: nowrap;
+  border-width: 1px;
+  border-style: solid;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 5px 0px;
+}
+.registro .contenedorregistro1 {
+  display: flex;
+  align-items: center;
+  margin: 1px;
+  justify-content: center;
+}
+.registro .contenedorregistro1 .iconoregistro {
+  margin: 1px 5px;
+  height: 17.5px;
+}
+.registro .contenedorregistro1 .registronombre1 {
+  margin: 1px 5px;
+  font-size: 12px;
+}
+.registro .contenedorregistro2 {
+  margin: 1px;
+  padding: 1px;
+  text-align: center;
+}
+.registro .contenedorregistro2 .registronombre2 {
+  margin: 1px 5px;
+  padding: 2px 5px;
+  font-size: 12px;
 }
 
-.contenedorregistro1 {
-    display: flex;
-    align-items: center;
-    margin: 1px;
-    justify-content: center;
-}
-
-.iconoregistro {
-    margin: 1px 5px;
-    height: 17.5px;
-}
-
-.registronombre1 {
-    margin: 1px 5px;
-    font-size: 12px;
-}
-
-.contenedorregistro2 {
-    margin: 1px;
-    padding: 1px;
-    text-align: center;
-}
-
-.registronombre2 {
-    margin: 1px 5px;
-    padding: 2px 5px;
-    font-size: 12px;
-}
-
+/*# sourceMappingURL=style.css.map */
