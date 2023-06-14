@@ -1,96 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-.logo img {
+/* HEADER */
+.img {
     max-height: 56px;
 }
-
 .navbar-nav {
     text-align: end;
-}
-
-.botonemergencias {
-    text-align: end;
-}
-.botonemergencias button {
-    background-color: red;
-    color: white;
-    padding: 12px 16px;
-    border: none;
-    border-radius: 100px;
-    font-weight: bold;
-    font-family: "Monserrat"; 
-    font-size: 75%;
-}
-
-.enlace-botonemergencias {
-    text-decoration: none;
-}
-
-.botonemergencias1 button {
-    display: none;
-}
-
-/* BANNER */
-
-.imagenprincipal {
-    width: 100%;
-    height: 154px;
-    border-radius: 20px;
-}
-
-.contenedor2 {
-    position: relative;
-    margin-bottom: 24px;
-}
-
-.texto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-30%, -50%);
-}
-
-.punto-aparte {
-    display: inline-block;
-}
-
-.titulo {
-    font-family: "Monserrat";
-    font-size: 32px;
-    color: #1A8389;
-    font-weight: 700;
-}
-
-@media (min-width: 992px) {
-    .encabezado {
-        align-items: center;
-    }
-    .logo img {
-        max-height: 72px;
-    }
-    .collapse {
-        justify-content: end;
-        text-transform: uppercase;
-    }
-    .nav-link {
-        border: none;
-        border-radius: 100px;
-        font-weight: bold;
-        font-family: "Monserrat"; 
-        cursor: pointer;
-    }
-    .nav-link:hover {
-        background-color: #1A8389;
-        color: white;
-    }
     .botonemergencias {
-        display: none;
-    }
-    .botonemergencias1 {
         text-align: end;
-    }
-    .botonemergencias1 button {
-        display: initial;
+        .button {
         background-color: red;
         color: white;
         padding: 12px 16px;
@@ -98,22 +16,99 @@
         border-radius: 100px;
         font-weight: bold;
         font-family: "Monserrat"; 
-        cursor: pointer;
+        font-size: 75%;
+        }
     }
-    .botonemergencias1 button:hover {
-        background-color: yellow;
-        color: black;
+}
+.enlace-botonemergencias {
+    text-decoration: none;
+    .button {
+        display: none;
     }
+}
+
+/* BANNER */
+
+
+.contenedor2 {
+    position: relative;
+    margin-bottom: 24px;
+    .texto {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30%, -50%);
+        .titulo {
+            font-family: "Monserrat";
+            font-size: 32px;
+            color: #1A8389;
+            font-weight: 700;
+            .punto-aparte {
+                display: inline-block;
+            }
+            
+        }        
+    }    
+    .imagenprincipal {
+        width: 100%;
+        height: 154px;
+        border-radius: 20px;
+    }
+    
+}
+
+@media (min-width: 992px) {
+    .encabezado {
+        align-items: center;
+        .logo img {
+            max-height: 72px;
+        }  
+        .collapse {
+            justify-content: end;
+            text-transform: uppercase;
+            .nav-link {
+                border: none;
+                border-radius: 100px;
+                font-weight: bold;
+                font-family: "Monserrat"; 
+                cursor: pointer;
+                &:hover {
+                    background-color: #1A8389;
+                    color: white;
+                }
+            }  
+            .botonemergencias {
+                display: none;
+            }              
+        }      
+    }
+    .botonemergencias1 {
+        text-align: end;
+        .button {
+            display: initial;
+            background-color: red;
+            color: white;
+            padding: 12px 16px;
+            border: none;
+            border-radius: 100px;
+            font-weight: bold;
+            font-family: "Monserrat"; 
+            cursor: pointer;
+            &:hover {
+                background-color: yellow;
+                color: black;
+            }
+        }
+    }
+    
     .texto {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        .titulo {
+            font-size: 56px;
+        }    
     }
-        
-    .titulo {
-        font-size: 56px;
-    }      
-    
 }
 
 /* MAIN */
