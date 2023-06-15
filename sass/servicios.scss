@@ -8,7 +8,7 @@
     text-align: end;
     .botonemergencias {
         text-align: end;
-        .button {
+        button {
         background-color: red;
         color: white;
         padding: 12px 16px;
@@ -22,13 +22,12 @@
 }
 .enlace-botonemergencias {
     text-decoration: none;
-    .button {
+    button {
         display: none;
     }
 }
 
-/* BANNER */
-
+/* BANNER HEADER */
 
 .contenedor2 {
     position: relative;
@@ -46,7 +45,6 @@
             .punto-aparte {
                 display: inline-block;
             }
-            
         }        
     }    
     .imagenprincipal {
@@ -56,6 +54,8 @@
     }
     
 }
+
+/* VISTA DESKTOP*/
 
 @media (min-width: 992px) {
     .encabezado {
@@ -80,27 +80,28 @@
             .botonemergencias {
                 display: none;
             }              
-        }      
-    }
-    .botonemergencias1 {
-        text-align: end;
-        .button {
-            display: initial;
-            background-color: red;
-            color: white;
-            padding: 12px 16px;
-            border: none;
-            border-radius: 100px;
-            font-weight: bold;
-            font-family: "Monserrat"; 
-            cursor: pointer;
-            &:hover {
-                background-color: yellow;
-                color: black;
+        } 
+        .botonemergencias1 {
+            text-align: end;
+            button {
+                display: initial;
+                background-color: red;
+                color: white;
+                padding: 12px 16px;
+                border: none;
+                border-radius: 100px;
+                font-weight: bold;
+                font-family: "Monserrat"; 
+                cursor: pointer;
+                &:hover {
+                    background-color: yellow;
+                    color: black;
+                }
             }
-        }
+        }         
     }
     
+    .contenedor2 {
     .texto {
         top: 50%;
         left: 50%;
@@ -110,83 +111,153 @@
         }    
     }
 }
+}
 
 /* MAIN */
+
 .contenedor-carousel {
     display: flex;
     justify-content: center;
     align-items: center;
+    .contenedorservicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        align-items: end;
+        margin-bottom: 24px;
+        justify-items: center;
+        height: 336px;
+        .contenedorservicios2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 9% 2%;
+        padding: 0% 10%;
+        position: absolute;
+            .servicio {
+                padding: 16px;
+                color: #1A8389;
+                font-size: 32px;
+                font-weight: 700;
+                font-family: "Monserrat";
+                text-align: center;
+            }
+            .descripcionservicio {
+                text-align: center;
+                font-size: 16px;
+                padding: 1px;
+                color: #1A8389;
+                font-family: "Monserrat";
+            } 
+            .botonreserva {
+                background-color: #1A8389;
+                color: white;
+                padding: 8px 12px;
+                border: none;
+                border-radius: 100px;
+                font-weight: bold;
+                font-family: "Monserrat"; 
+                cursor: pointer;
+                list-style: none;
+                font-size: 16px;
+            }                       
+        }
+        .a {
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            margin-top: 5%;
+        } 
+        .contenedor-img {
+            height: 100%;
+            .imagenservicios {
+            border-radius: 20px;
+            height: 100%;
+            } 
+        }              
+    }
+    .contenedorservicios1 {
+        display: none;
+        grid-template-columns: 1fr;
+        position: relative;
+        align-items: end;
+        justify-items: center;
+        .contenedorservicios2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2% 3%;
+        padding: 1% 5%;
+        position: absolute;
+            .servicio {
+                padding: 16px;
+                color: #1A8389;
+                font-size: 24px;
+                font-weight: 700;
+                font-family: "Monserrat";
+            }
+            .descripcionservicio {
+                text-align: center;
+                font-size: 16px;
+                padding: 1px;
+                color: #1A8389;
+                font-family: "Monserrat";
+            } 
+            .botonreserva {
+                background-color: #1A8389;
+                color: white;
+                padding: 8px 12px;
+                border: none;
+                border-radius: 100px;
+                font-weight: bold;
+                font-family: "Monserrat"; 
+                cursor: pointer;
+                list-style: none;
+                font-size: 16px;
+            }                       
+        }
+        .a {
+            text-decoration: none;
+            list-style: none;
+            color: white;
+        } 
+        .imagenservicios {
+            border-radius: 20px;
+            height: 100%;
+        }               
+    }
 }
-
-.contenedorservicios {
-    display: grid;
-    grid-template-columns: 1fr;
-    position: relative;
-    align-items: end;
-    margin-bottom: 24px;
-    justify-items: center;
-}
-
-.contenedorservicios2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 24px 32px;
-    padding: 0px 10px;
-    position: absolute;
-
-}
-
-.contenedorservicios a {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-}
-
-.servicio {
-    padding: 16px;
-    color: #1A8389;
-    font-size: 24px;
-    font-weight: 700;
-    font-family: "Monserrat";
-}
-
-.descripcionservicio {
-    text-align: center;
-    font-size: 16px;
-    padding: 1px;
-    color: #1A8389;
-    font-family: "Monserrat";
-
-}
-
-
-.imagenservicios {
-    border-radius: 20px;
-    height: 100%;
-
-}
-
-.botonreserva {
-    background-color: #1A8389;
-    color: white;
-    padding: 8px 12px;
-    border: none;
-    border-radius: 100px;
-    font-weight: bold;
-    font-family: "Monserrat"; 
-    cursor: pointer;
-    list-style: none;
-    font-size: 16px;
-}
+/* VISTA DESKTOP */
 
 @media (min-width: 992px) {
     .carousel {
-        width: 75%;
+        .contenedor-servicios {
+            display: flex;
+            padding: 3%;
+            margin: 2% 0%;
+            border: solid #1A8389 1px ;
+            border-radius: 20px;
+            .contenedorservicios {
+                margin-right: 2%;
+                margin-bottom: 0%;
+                height: 0%;
+                .contenedorservicios2 {
+                    margin: 2% 3%;
+                    padding: 1% 5%;            
+                }
+            }
+            .contenedorservicios1 {
+                display: grid;
+                margin-left: 2%;
+            }
+        }
+        .servicios-mobile {
+            display: none;
+        }
     }
 }
-
 
     /* ASIDE */
 
@@ -195,182 +266,169 @@
         padding: 24px;
         display: block;
         border-radius: 20px;
-    }
-    .turnero-1 {
-        background-color: white;
-        padding: 16px;
-        border-radius: 15px;
-        box-shadow: 0 2px 4px #022a2c;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .tituloturnero {
-        text-align: center;
-        margin: 16px 16px 32px;
-        font-weight: 700;
-        font-family: "Monserrat";
-        color: #1A8389;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .label-turnero {
-        text-align: center;
-        font-weight: 700;
-        font-family: "Monserrat";
-        color: #1A8389;
-    }
-
-    .input-turnero {
-        text-align: center;
-        padding: 2% 20%;
-        border-radius: 20px;
-        margin: 10px 0px;
-        color: #1A8389;
-        font-weight: 700;
-    }
-
-    .contenedor-botonturnero {
-        text-align: center;
-        margin: 16px;
-    }
-    .botonturnero {
-        background-color: #1A8389;
-        color: white;
-        padding: 12px 12px;
-        border: none;
-        border-radius: 50px;
-        font-weight: bold;
-        font-family: "Monserrat"; 
+        .turnero-1 {
+            background-color: white;
+            padding: 16px;
+            border-radius: 15px;
+            box-shadow: 0 2px 4px #022a2c;
+            display: flex;
+            flex-direction: column;
+            .tituloturnero {
+                text-align: center;
+                margin: 16px 16px 32px;
+                font-weight: 700;
+                font-family: "Monserrat";
+                color: #1A8389;
+            }      
+            form {
+                display: flex;
+                flex-direction: column;
+                .label-turnero {
+                    text-align: center;
+                    font-weight: 700;
+                    font-family: "Monserrat";
+                    color: #1A8389;
+                }      
+                .input-turnero {
+                    text-align: center;
+                    padding: 1% 10%;
+                    border-radius: 20px;
+                    margin: 10px 0px;
+                    color: #1A8389;
+                    font-weight: 700;
+                }     
+                .contenedor-botonturnero {
+                    text-align: center;
+                    margin: 16px;
+                    .botonturnero {
+                        background-color: #1A8389;
+                        color: white;
+                        padding: 12px 12px;
+                        border: none;
+                        border-radius: 50px;
+                        font-weight: bold;
+                        font-family: "Monserrat"; 
+                    }                
+                }                         
+            }          
+        }    
     }
 
     @media (min-width: 992px) {
         .div-turnero {
-            padding: 46px 165px
-        }
-        .turnero {
-            padding: 16px 56px; 
-        }
-        .tituloturnero {
-            font-size: 48px;
-        }
-        .input-turnero {
-            padding:1% 10%;
-
+            padding: 3% 25%;
+            .turnero {
+                padding: 16px 56px;
+                .tituloturnero {
+                    font-size: 42px;
+                }      
+                form {
+                    .input-turnero {
+                    padding:1% 10%;
+                    margin: 2% 10%;
+                    }
+                    .botonturnero {
+                    padding: 3%;
+                    margin: 5% 36% 2%;
+                    } 
+                }               
+            }
         }
     }
     
-/* FOOTER */
+/* PIE DE PAGINA */
 .piedepagina {
     background-color: black;
     margin-top: 16px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-}
-
-h6 {
-    color: white;
-}
-
-.footerubicacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1px;
-    padding: 16px 1px;
-    text-align: center;
-    height: 100%;
-}
-
-.contenedorubicacion { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-}
-
-.calleubicacion { 
-    font-family: "Monserrat";
-    margin: 5px 5px 2.5px;
-    padding: 5px 5px 2.5px;
-}
-
-.barrioubicacion {
-    font-family: "Monserrat";
-    margin: 2.5px 5px 5px;
-    padding: 2.5px 5px 5px;
-}
-
-.footerhorarios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1px;
-    padding: 16px 1px;
-    text-align: center;
-    height: 100%;
-}
-
-.contenedorhorarios {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.diaslaborales {
-    font-family: "Monserrat";
-    margin: 5px 5px 2.5px;
-    padding: 5px 5px 2.5px;
-}
-
-.horarioslaborales {    
-    font-family: "Monserrat";
-    margin: 2.5px 5px 5px;
-    padding: 2.5px 5px 5px;
-}
-
-.iconofooter {
-    width: 56px;
-}
-
-.footerredes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 1px;
-    padding: 16px 1px;
-    height: 100%;
-}
-
-.contenedorinstagram {
-    width: 48px;
-    height: 48px;
-    margin: 1px;
-    padding: 1px 1px 6px6;
-}
-
-.iconoinstagram { 
-    width: 48px;
-    height: 48px;
-}
-
-.contenedorwhatsapp {
-    width: 48px;
-    height: 48px;
-    margin: 1px;
-    padding: 6px 1px 1px;
-}
-
-.iconowhatsapp {
-    width: 48px;
-    height: 48px;
+    h6 {
+        color: white;
+    }
+    .footerubicacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1px;
+        padding: 16px 1px;
+        text-align: center;
+        height: 100%;
+        .contenedorubicacion { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        }
+        .calleubicacion { 
+        font-family: "Monserrat";
+        margin: 5px 5px 2.5px;
+        padding: 5px 5px 2.5px;
+        }
+        .barrioubicacion {
+        font-family: "Monserrat";
+        margin: 2.5px 5px 5px;
+        padding: 2.5px 5px 5px;
+        }        
+    }
+    .footerhorarios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1px;
+        padding: 16px 1px;
+        text-align: center;
+        height: 100%;
+        .contenedorhorarios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .diaslaborales {
+            font-family: "Monserrat";
+            margin: 5px 5px 2.5px;
+            padding: 5px 5px 2.5px;
+        }
+        .horarioslaborales {    
+            font-family: "Monserrat";
+            margin: 2.5px 5px 5px;
+            padding: 2.5px 5px 5px;
+        }    
+    }   
+    .iconofooter {
+        width: 56px;
+    }  
+    .footerredes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 1px;
+        padding: 16px 1px;
+        height: 100%;
+        .contenedorinstagram {
+            width: 48px;
+            height: 48px;
+            margin: 1px;
+            padding: 1px 1px 6px6;
+            .iconoinstagram { 
+                width: 48px;
+                height: 48px;
+            }
+        }
+        
+        .contenedorwhatsapp {
+            width: 48px;
+            height: 48px;
+            margin: 1px;
+            padding: 6px 1px 1px;
+            .iconowhatsapp {
+                width: 48px;
+                height: 48px;
+            }
+        }    
+    }       
 }
 
 .registro {
@@ -381,35 +439,37 @@ h6 {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     padding: 5px 0px;
-
-}
-
-.contenedorregistro1 {
-    display: flex;
     align-items: center;
-    margin: 1px;
-    justify-content: center;
+    .contenedorregistro1 {
+        display: flex;
+        align-items: center;
+        margin: 1px;
+        justify-content: center;
+        .iconoregistro {
+            margin: 1px 5px;
+            height: 17.5px;
+        }
+        
+        .registronombre1 {
+            margin: 1px 5px;
+            font-size: 12px;
+        }    
+    }  
+    .contenedorregistro2 {
+        margin: 1px;
+        padding: 1px;
+        text-align: center;
+
+        .registronombre2 {
+            margin: 1px 5px;
+            padding: 2px 5px;
+            font-size: 12px;
+        }    
+    }      
 }
 
-.iconoregistro {
-    margin: 1px 5px;
-    height: 17.5px;
-}
 
-.registronombre1 {
-    margin: 1px 5px;
-    font-size: 12px;
-}
 
-.contenedorregistro2 {
-    margin: 1px;
-    padding: 1px;
-    text-align: center;
-}
 
-.registronombre2 {
-    margin: 1px 5px;
-    padding: 2px 5px;
-    font-size: 12px;
-}
+
 

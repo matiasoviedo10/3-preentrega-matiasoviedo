@@ -106,20 +106,20 @@
 
 /* VISTA DESKTOP */
 @media (min-width: 992px) {
-  .texto {
+  .container .texto {
     top: 25%;
   }
-  .texto .titulo {
+  .container .texto .titulo {
     font-size: 72px;
   }
-  .texto .eslogan {
+  .container .texto .eslogan {
     font-size: 28px;
     text-align: end;
   }
-  .imagenprincipal {
+  .container .imagenprincipal {
     border-radius: 20px;
   }
-  .contenedor-carousel {
+  .container .contenedor-carousel {
     width: 60%;
   }
 }
@@ -157,7 +157,7 @@
 }
 .div-turnero .turnero form .input-turnero {
   text-align: center;
-  padding: 2% 20%;
+  padding: 1% 10%;
   border-radius: 20px;
   margin: 10px 0px;
   color: #1A8389;
@@ -245,8 +245,10 @@
   margin: 2.5px 5px 5px;
   padding: 2.5px 5px 5px;
 }
-
-.footerredes {
+.piedepagina .iconofooter {
+  width: 56px;
+}
+.piedepagina .footerredes {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -255,23 +257,23 @@
   padding: 16px 1px;
   height: 100%;
 }
-.footerredes .contenedorinstagram {
+.piedepagina .footerredes .contenedorinstagram {
   width: 48px;
   height: 48px;
   margin: 1px;
   padding: 1px 1px 6px6;
 }
-.footerredes .contenedorinstagram .iconoinstagram {
+.piedepagina .footerredes .contenedorinstagram .iconoinstagram {
   width: 48px;
   height: 48px;
 }
-.footerredes .contenedorwhatsapp {
+.piedepagina .footerredes .contenedorwhatsapp {
   width: 48px;
   height: 48px;
   margin: 1px;
   padding: 6px 1px 1px;
 }
-.footerredes .contenedorwhatsapp .iconowhatsapp {
+.piedepagina .footerredes .contenedorwhatsapp .iconowhatsapp {
   width: 48px;
   height: 48px;
 }
