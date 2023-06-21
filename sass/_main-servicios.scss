@@ -1,0 +1,140 @@
+/* MAIN */
+.contenedor-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contenedorservicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        align-items: end;
+        margin: 3% 0%;
+        justify-items: center;
+        height: 336px;
+        .contenedorservicios2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 9% 2%;
+        padding: 0% 10%;
+        position: absolute;
+            .servicio {
+                padding: 16px;
+                color: $color-principal;
+                font-size: 32px;
+                font-weight: 700;
+                font-family: "Monserrat";
+                text-align: center;
+            }
+            .descripcionservicio {
+                text-align: center;
+                font-size: 16px;
+                padding: 1px;
+                color: $color-principal;
+                font-family: "Monserrat";
+            } 
+            .botonreserva {
+                background-color: $color-principal;
+                color: $color-secundario;
+                padding: 8px 12px;
+                border: none;
+                border-radius: 100px;
+                font-weight: bold;
+                font-family: "Monserrat"; 
+                cursor: pointer;
+                list-style: none;
+                font-size: 16px;
+            }                       
+        }
+        .a {
+            text-decoration: none;
+            list-style: none;
+        } 
+        .contenedor-img {
+            height: 100%;
+            .imagenservicios {
+            border-radius: 20px;
+            height: 100%;
+            } 
+        }              
+    }
+    .contenedorservicios1 {
+        display: none;
+        grid-template-columns: 1fr;
+        position: relative;
+        align-items: end;
+        justify-items: center;
+        .contenedorservicios2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2% 3%;
+        padding: 1% 5%;
+        position: absolute;
+            .servicio {
+                padding: 16px;
+                color: $color-principal;
+                font-size: 24px;
+                font-weight: 700;
+                font-family: "Monserrat";
+            }
+            .descripcionservicio {
+                text-align: center;
+                font-size: 16px;
+                padding: 1px;
+                color: $color-principal;
+                font-family: "Monserrat";
+            } 
+            .botonreserva {
+                background-color: $color-principal;
+                color: $color-secundario;
+                padding: 8px 12px;
+                border: none;
+                border-radius: 100px;
+                font-weight: bold;
+                font-family: "Monserrat"; 
+                cursor: pointer;
+                list-style: none;
+                font-size: 16px;
+            }                       
+        }
+        .a {
+            text-decoration: none;
+            list-style: none;
+        } 
+        .imagenservicios {
+            border-radius: 20px;
+            height: 100%;
+        }               
+    }
+}
+/* VISTA DESKTOP */
+
+@media (min-width: 992px) {
+    .carousel {
+        .contenedor-servicios {
+            display: flex;
+            padding: 3%;
+            margin: 2% 0%;
+            border: solid $color-principal 1px ;
+            border-radius: 20px;
+            .contenedorservicios {
+                margin: 0% 2% 0% 0%;
+                height: 0%;
+                .contenedorservicios2 {
+                    margin: 2% 3%;
+                    padding: 1% 5%;            
+                }
+            }
+            .contenedorservicios1 {
+                display: grid;
+                margin-left: 2%;
+            }
+        }
+        .servicios-mobile {
+            display: none   ;
+        }
+    }
+}

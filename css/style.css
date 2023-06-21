@@ -1,17 +1,31 @@
+/* GENERALES */ /* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+/* COLORES */
+/* MARGENES - CONTENEDORES PRINCIPALES */
+/* MIXIN */
+/* ESTILOS-FUNTES */
+/* ESTILOS-DISPLAY */
+/* ESTILOS-MARGIN-PADDING */
+/* BORDES */
+/* ESTILOS-TEXTO */
+/* MAPS */
 /* HEADER */
-.img {
+/* HEADER */
+.encabezado {
+  align-items: start;
+  margin: 3% 0% 0%;
+}
+.encabezado .img {
   max-height: 56px;
 }
-
-.navbar-nav {
+.encabezado .navbar-nav {
   text-align: end;
 }
-.navbar-nav .botonemergencias {
+.encabezado .navbar-nav .botonemergencias {
   text-align: end;
 }
-.navbar-nav .botonemergencias button {
-  background-color: red;
+.encabezado .navbar-nav .botonemergencias button {
+  background-color: crimson;
   color: white;
   padding: 12px 16px;
   border: none;
@@ -20,18 +34,16 @@
   font-family: "Monserrat";
   font-size: 75%;
 }
-
-.enlace-botonemergencias {
+.encabezado .enlace-botonemergencias {
   text-decoration: none;
 }
-.enlace-botonemergencias button {
+.encabezado .enlace-botonemergencias button {
   display: none;
 }
 
-/* VISTA DESKTOP */
 @media (min-width: 992px) {
   .encabezado {
-    align-items: center;
+    margin: 2% 0% 0%;
   }
   .encabezado .logo img {
     max-height: 72px;
@@ -59,7 +71,7 @@
   }
   .encabezado .botonemergencias1 button {
     display: initial;
-    background-color: red;
+    background-color: crimson;
     color: white;
     padding: 12px 16px;
     border: none;
@@ -69,36 +81,40 @@
     cursor: pointer;
   }
   .encabezado .botonemergencias1 button:hover {
-    background-color: yellow;
+    background-color: gold;
     color: black;
   }
 }
 /* MAIN */
-.container {
+/* MAIN */
+.contenedor-main {
   position: relative;
+  margin: 3% 0%;
 }
-.container .texto {
+.contenedor-main .texto {
   position: absolute;
   text-align: center;
-  font-family: "Monserrat";
   z-index: 1;
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.container .texto .titulo {
+.contenedor-main .texto .titulo {
+  font-family: "$font";
   font-size: 36px;
-  color: #1A8389;
   font-weight: 700;
+  color: #1A8389;
 }
-.container .texto .titulo .subrayado {
+.contenedor-main .texto .titulo .subrayado {
   text-decoration: underline;
 }
-.container .texto .eslogan {
+.contenedor-main .texto .eslogan {
+  font-family: "$font";
   font-size: 16px;
+  font-weight: 400;
   color: #1A8389;
 }
-.container .imagenprincipal {
+.contenedor-main .imagenprincipal {
   width: 100%;
   z-index: 2;
   border-radius: 20px;
@@ -106,68 +122,158 @@
 
 /* VISTA DESKTOP */
 @media (min-width: 992px) {
-  .container .texto {
+  .contenedor-main {
+    margin: 2% 0%;
+  }
+  .contenedor-main .texto {
     top: 25%;
   }
-  .container .texto .titulo {
+  .contenedor-main .texto .titulo {
     font-size: 72px;
   }
-  .container .texto .eslogan {
+  .contenedor-main .texto .eslogan {
     font-size: 28px;
     text-align: end;
   }
-  .container .imagenprincipal {
+}
+/* CAROUSEL */
+.contenedorservicios, .contenedorservicios1 {
+  display: grid;
+  justify-items: center;
+  align-items: end;
+  grid-template-columns: 1fr;
+  position: relative;
+  margin: 3% 0%;
+}
+.contenedorservicios .contenedorservicios2, .contenedorservicios1 .contenedorservicios2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 9% 2%;
+  padding: 0% 10%;
+  position: absolute;
+}
+.contenedorservicios .contenedorservicios2 .servicio, .contenedorservicios1 .contenedorservicios2 .servicio {
+  margin: 2px;
+  padding: 14px;
+  color: #1A8389;
+  font-family: "$font";
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+.contenedorservicios .contenedorservicios2 .descripcionservicio, .contenedorservicios1 .contenedorservicios2 .descripcionservicio {
+  text-align: center;
+  font-family: "$font";
+  font-size: 16px;
+  font-weight: 400;
+  color: #1A8389;
+}
+.contenedorservicios .contenedorservicios2 .botonreserva, .contenedorservicios1 .contenedorservicios2 .botonreserva {
+  background-color: #1A8389;
+  color: white;
+  margin: 1px;
+  padding: 8px 12px;
+  font-family: "$font";
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  list-style: none;
+}
+.contenedorservicios .a, .contenedorservicios1 .a {
+  text-decoration: none;
+  list-style: none;
+}
+.contenedorservicios .imagenservicios, .contenedorservicios1 .imagenservicios {
+  border: none;
+  border-radius: 20px;
+}
+
+.contenedorservicios1 {
+  display: none;
+}
+/* VISTA DESKTOP */
+@media (min-width: 992px) {
+  .contenedor-servicios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0%;
+    border: solid #1A8389 2px;
     border-radius: 20px;
   }
-  .container .contenedor-carousel {
-    width: 60%;
+  .contenedor-servicios .contenedorservicios, .contenedor-servicios .contenedorservicios1 {
+    margin: 2% 2% 2% 4%;
+    padding: 0%;
+  }
+  .contenedor-servicios .contenedorservicios .contenedorservicios2, .contenedor-servicios .contenedorservicios1 .contenedorservicios2 {
+    margin: 2% 3%;
+    padding: 1% 5%;
+  }
+  .contenedor-servicios .contenedorservicios .contenedorservicios2 .servicio, .contenedor-servicios .contenedorservicios1 .contenedorservicios2 .servicio {
+    font-size: 36px;
+  }
+  .contenedor-servicios .contenedorservicios1 {
+    display: grid;
+    margin: 2% 4% 2% 2%;
+    padding: 0%;
+  }
+  .contenedor-servicios .contenedorservicios1 .contenedorservicios2 .servicio {
+    font-size: 36px;
   }
 }
 /* ASIDE */
+/* ASIDE */
 .div-turnero {
   background-color: #1A8389;
+  margin: 3% 0%;
   padding: 24px;
-  display: block;
   border-radius: 20px;
 }
-.div-turnero .turnero {
+.div-turnero .turnero-1 {
   background-color: white;
   padding: 16px;
   border-radius: 15px;
-  box-shadow: 0 2px 4px #022a2c;
   display: flex;
   flex-direction: column;
 }
-.div-turnero .turnero .tituloturnero {
+.div-turnero .turnero-1 .tituloturnero {
   text-align: center;
   margin: 16px 16px 32px;
+  font-family: "$font";
+  font-size: 32px;
   font-weight: 700;
-  font-family: "Monserrat";
   color: #1A8389;
 }
-.div-turnero .turnero form {
+.div-turnero .turnero-1 form {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
-.div-turnero .turnero form .label-turnero {
-  text-align: center;
+.div-turnero .turnero-1 form .label-turnero {
+  font-family: "$font";
+  font-size: inherit;
   font-weight: 700;
-  font-family: "Monserrat";
   color: #1A8389;
-}
-.div-turnero .turnero form .input-turnero {
   text-align: center;
-  padding: 1% 10%;
-  border-radius: 20px;
+}
+.div-turnero .turnero-1 form .input-turnero {
   margin: 10px 0px;
+  padding: 1% 10%;
   color: #1A8389;
   font-weight: 700;
+  border-radius: 20px;
+  text-align: center;
 }
-.div-turnero .turnero form .contenedor-botonturnero {
+.div-turnero .turnero-1 form .contenedor-botonturnero {
   text-align: center;
   margin: 16px;
 }
-.div-turnero .turnero form .contenedor-botonturnero .botonturnero {
+.div-turnero .turnero-1 form .contenedor-botonturnero .botonturnero {
   background-color: #1A8389;
   color: white;
   padding: 12px 12px;
@@ -177,22 +283,30 @@
   font-family: "Monserrat";
 }
 
-/* VISTA DESKTOP */
 @media (min-width: 992px) {
   .div-turnero {
-    padding: 46px 165px;
+    padding: 3% 25%;
   }
-  .div-turnero .tituloturnero {
-    font-size: 48px;
+  .div-turnero .turnero {
+    padding: 16px 56px;
   }
-  .div-turnero .input-turnero {
+  .div-turnero .turnero .tituloturnero {
+    font-size: 42px;
+  }
+  .div-turnero .turnero form .input-turnero {
     padding: 1% 10%;
+    margin: 2% 10%;
+  }
+  .div-turnero .turnero form .botonturnero {
+    padding: 3%;
+    margin: 5% 36% 2%;
   }
 }
-/* PIE DE PAGINA */
+/* FOOTER */
+/* FOOTER */
 .piedepagina {
   background-color: black;
-  margin-top: 16px;
+  margin-top: 3%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
@@ -215,12 +329,12 @@
   align-items: center;
   text-decoration: none;
 }
-.piedepagina .footerubicacion .contenedorubicacion .calleubicacion {
+.piedepagina .footerubicacion .calleubicacion {
   font-family: "Monserrat";
   margin: 5px 5px 2.5px;
   padding: 5px 5px 2.5px;
 }
-.piedepagina .footerubicacion .contenedorubicacion .barrioubicacion {
+.piedepagina .footerubicacion .barrioubicacion {
   font-family: "Monserrat";
   margin: 2.5px 5px 5px;
   padding: 2.5px 5px 5px;
@@ -234,6 +348,11 @@
   padding: 16px 1px;
   text-align: center;
   height: 100%;
+}
+.piedepagina .footerhorarios .contenedorhorarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .piedepagina .footerhorarios .diaslaborales {
   font-family: "Monserrat";
@@ -261,7 +380,7 @@
   width: 48px;
   height: 48px;
   margin: 1px;
-  padding: 1px 1px 6px6;
+  padding: 1px 1px 6px;
 }
 .piedepagina .footerredes .contenedorinstagram .iconoinstagram {
   width: 48px;
@@ -286,6 +405,7 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   padding: 5px 0px;
+  align-items: center;
 }
 .registro .contenedorregistro1 {
   display: flex;
@@ -310,6 +430,12 @@
   margin: 1px 5px;
   padding: 2px 5px;
   font-size: 12px;
+}
+
+@media (min-width: 992px) {
+  .piedepagina {
+    margin-top: 2%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
