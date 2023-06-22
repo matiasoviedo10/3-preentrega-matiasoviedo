@@ -1,12 +1,17 @@
-/* HEADER */
-@import './header-nav';
+/* UTILS */
+@import './utils/variables';
+@import './utils/mixin';
+@import './utils/maps';
 
-/* MAIN */  
-@import './banner-principal';
-@import './carousel';
+/* HEADER */
+@import './layout/navegador';
+
+/* MAIN */
+@import './layout/banner-principal';
+@import './layout/carousel';
 
 /* ASIDE */
-@import './aside';
+@import './layout/aside';
 
 /* FOOTER */
-@import './footer';
+@import './layout/footer';
