@@ -1,11 +1,15 @@
+/* UTILS */
+@import './utils/variables';
+@import './utils/mixin';
+
 /* HEADER */
-@import './header-nav';
+@import './layout/navegador';
 
 /* MAIN */
-@import './formulario';
+@import './layout/formulario';
 
 /* ASIDE */
-@import './aside';
+@import './layout/aside';
 
 /* FOOTER */
-@import './footer';
+@import './layout/footer';

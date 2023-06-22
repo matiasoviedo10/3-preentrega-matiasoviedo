@@ -1,8 +1,7 @@
-/* ASIDE */
 .div-turnero {
     background-color: map-get($color-fondos, primario);
     @include margin-padding-style($margin-mobile, 24px);
-    border-radius: 20px;
+    border-radius: $border_radius-stylepage;
     .turnero-1 {
         background-color: map-get($color-fondos, secundario);
         padding: 16px;
@@ -13,7 +12,7 @@
             text-align: center;
             margin: 16px 16px 32px;
             @include font-styles("$font", 32px, 700);
-            color: $color-principal;
+            color: map-get($color-textos, primario);
         }      
         form {
             @include display-style-content(flex, center, center);
@@ -35,7 +34,7 @@
                 margin: 16px;
                 .botonturnero {
                     background-color: map-get($color-fondo-boton, boton-carousel);
-                    color: map-get($color-fondo-boton, boton-texto-1);
+                    color: map-get($color-fondo-boton, boton-texto-2);
                     padding: 12px 12px;
                     border: none;
                     border-radius: 50px;

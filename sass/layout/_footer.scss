@@ -1,18 +1,10 @@
-/* GENERALES */
-@import './generales';
-/* MAPS */
-@import './maps';
-/* MIXIN */
-@import './mixin';
-
-/* FOOTER */
 .piedepagina {
-    background-color: $color-fondo-footer;
+    background-color: map-get($color-fondos, terciario);
     margin-top: 3%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     h6 {
-        color: $color-secundario;
+        color: map-get($color-textos, secundario);
     }
     .footerubicacion {
         display: flex;
@@ -101,7 +93,7 @@
 }
 
 .registro {
-    background-color: $color-secundario;
+    background-color: map-get($color-fondos, secundario);
     flex-wrap: nowrap;
     border-width: 1px;
     border-style: solid;

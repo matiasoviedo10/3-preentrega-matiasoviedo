@@ -1,11 +1,3 @@
-/* GENERALES */
-@import './generales';
-/* MAPS */
-@import './maps';
-/* MIXIN */
-@import './mixin';
-
-/* BANNER HEADER */
 .contenedor2 {
     position: relative;
     margin: $margin-mobile;
@@ -16,7 +8,7 @@
         transform: translate(-35%, -50%);
         .titulo {
             @include font-styles("$font", 32px, 700);
-            color: $color-principal;
+            color: map-get($color-textos, primario);
             .punto-aparte {
                 display: inline-block;
             }

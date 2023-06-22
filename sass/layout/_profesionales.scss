@@ -1,10 +1,3 @@
-/* GENERALES */
-@import './generales';
-/* MAPS */
-@import './maps';
-/* MIXIN */
-@import './mixin';
-
 .contenedorprofesionales {
     @include display-style-content(flex, center, center);
     flex-direction: column;
@@ -14,7 +7,7 @@
         width: 65%;
     }   
     .nombresdoctores {
-        color: $color-principal;
+        color: map-get($color-textos, primario);
         @include margin-padding-style(24px 12px 12px, 0px);
         @include font-styles("$font", 24px, 400);
         text-decoration: overline;        

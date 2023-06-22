@@ -1,11 +1,3 @@
-/* GENERALES */
-@import './generales';
-/* MAPS */
-@import './maps';
-/* MIXIN */
-@import './mixin';
-
-/* CAROUSEL */
 .contenedorservicios {
     @include display-style-items(grid, center, end);
     grid-template-columns: 1fr;
@@ -29,7 +21,7 @@
         } 
         .botonreserva {
             background-color: map-get($color-fondo-boton , boton-carousel);
-            color: map-get($color-fondo-boton, boton-texto-1);
+            color: map-get($color-fondo-boton, boton-texto-2);
             @include margin-padding-style(1px, 8px 12px);
             @include font-styles("$font", 16px, bold);
             @include border-b_radius-style(none, 100px);
