@@ -1,12 +1,11 @@
-/* GENERALES */
-@import './generales';
-
 /* HEADER */
 @import './header-nav';
-@import './header-banner';
+@import './banner-header';
 
 /* MAIN */
-@import './main-nosotros';
+@import './profesionales';
+@import './banner-aside';
+@import './historia';
 
 /* ASIDE */
 @import './aside';

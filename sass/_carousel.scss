@@ -1,5 +1,11 @@
-/* CAROUSEL */
+/* GENERALES */
+@import './generales';
+/* MAPS */
+@import './maps';
+/* MIXIN */
+@import './mixin';
 
+/* CAROUSEL */
 .contenedorservicios {
     @include display-style-items(grid, center, end);
     grid-template-columns: 1fr;

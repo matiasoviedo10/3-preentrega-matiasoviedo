@@ -35,3 +35,16 @@
     text-decoration: $text_deco;
     list-style: $list_style;
 }
+
+/* ESTILOS-POSICION */
+@mixin posicionamiento($arriba, $izquierda, $abajo, $derecha) {
+    top: $arriba;
+    left: $izquierda;
+    transform: translate($abajo, $derecha);
+}
+
+/* ESTILOS-FORMULARIO */
+@mixin bor_rad-padd-style($bor_rad, $padd) {
+    border-radius: $bor_rad;
+    padding: $padd;
+}

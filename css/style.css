@@ -1,16 +1,22 @@
-/* GENERALES */ /* FONT */
+/* HEADER */ /* GENERALES */ /* FONT */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 /* COLORES */
 /* MARGENES - CONTENEDORES PRINCIPALES */
+/* BORDES-ESTILOS */
+/* MAPS */
 /* MIXIN */
 /* ESTILOS-FUNTES */
 /* ESTILOS-DISPLAY */
 /* ESTILOS-MARGIN-PADDING */
 /* BORDES */
 /* ESTILOS-TEXTO */
-/* MAPS */
+/* ESTILOS-POSICION */
+/* ESTILOS-FORMULARIO */
 /* HEADER */
-/* HEADER */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 .encabezado {
   align-items: start;
   margin: 3% 0% 0%;
@@ -86,7 +92,19 @@
   }
 }
 /* MAIN */
-/* MAIN */
+/* GENERALES */ /* FONT */
+/* COLORES */
+/* MARGENES - CONTENEDORES PRINCIPALES */
+/* BORDES-ESTILOS */
+/* MAPS */
+/* MIXIN */
+/* ESTILOS-FUNTES */
+/* ESTILOS-DISPLAY */
+/* ESTILOS-MARGIN-PADDING */
+/* BORDES */
+/* ESTILOS-TEXTO */
+/* ESTILOS-POSICION */
+/* ESTILOS-FORMULARIO */
 .contenedor-main {
   position: relative;
   margin: 3% 0%;
@@ -136,6 +154,19 @@
     text-align: end;
   }
 }
+/* GENERALES */ /* FONT */
+/* COLORES */
+/* MARGENES - CONTENEDORES PRINCIPALES */
+/* BORDES-ESTILOS */
+/* MAPS */
+/* MIXIN */
+/* ESTILOS-FUNTES */
+/* ESTILOS-DISPLAY */
+/* ESTILOS-MARGIN-PADDING */
+/* BORDES */
+/* ESTILOS-TEXTO */
+/* ESTILOS-POSICION */
+/* ESTILOS-FORMULARIO */
 /* CAROUSEL */
 .contenedorservicios, .contenedorservicios1 {
   display: grid;
@@ -226,6 +257,19 @@
   }
 }
 /* ASIDE */
+/* GENERALES */ /* FONT */
+/* COLORES */
+/* MARGENES - CONTENEDORES PRINCIPALES */
+/* BORDES-ESTILOS */
+/* MAPS */
+/* MIXIN */
+/* ESTILOS-FUNTES */
+/* ESTILOS-DISPLAY */
+/* ESTILOS-MARGIN-PADDING */
+/* BORDES */
+/* ESTILOS-TEXTO */
+/* ESTILOS-POSICION */
+/* ESTILOS-FORMULARIO */
 /* ASIDE */
 .div-turnero {
   background-color: #1A8389;
@@ -303,6 +347,19 @@
   }
 }
 /* FOOTER */
+/* GENERALES */ /* FONT */
+/* COLORES */
+/* MARGENES - CONTENEDORES PRINCIPALES */
+/* BORDES-ESTILOS */
+/* MAPS */
+/* MIXIN */
+/* ESTILOS-FUNTES */
+/* ESTILOS-DISPLAY */
+/* ESTILOS-MARGIN-PADDING */
+/* BORDES */
+/* ESTILOS-TEXTO */
+/* ESTILOS-POSICION */
+/* ESTILOS-FORMULARIO */
 /* FOOTER */
 .piedepagina {
   background-color: black;

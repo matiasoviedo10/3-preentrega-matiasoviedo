@@ -1,3 +1,10 @@
+/* GENERALES */
+@import './generales';
+/* MAPS */
+@import './maps';
+/* MIXIN */
+@import './mixin';
+
 /* FOOTER */
 .piedepagina {
     background-color: $color-fondo-footer;

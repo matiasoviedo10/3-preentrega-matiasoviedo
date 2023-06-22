@@ -1,4 +1,10 @@
-/* MAIN */  
+/* GENERALES */
+@import './generales';
+/* MAPS */
+@import './maps';
+/* MIXIN */
+@import './mixin';
+
 .contenedor-main {
     position: relative;
     margin: $margin-mobile;
@@ -6,9 +12,7 @@
         position: absolute;
         text-align: center;
         z-index: 1;
-        top: 35%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include posicionamiento(35%, 50%, -50%, -50%);
         .titulo {
             @include font-styles("$font", 36px, 700);
             color: map-get($color-textos, primario);
@@ -24,7 +28,7 @@
     .imagenprincipal {
         width: 100%;
         z-index: 2;
-        border-radius: 20px;
+        border-radius: $border_radius-stylepage;
     }   
 }
 /* VISTA DESKTOP */
